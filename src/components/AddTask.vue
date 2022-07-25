@@ -1,3 +1,4 @@
+<!--  below is form ui -->
 <template>
     <form @submit="onSubmitTask" class="add-form">
         <div class="form-control">
@@ -15,6 +16,9 @@
         <input type="submit" value="Save Task" class="btn btn-block" />
     </form>
 </template>
+
+
+<!-- below is javascript logic -->
 <script>
 export default {
     name: "AddTask",

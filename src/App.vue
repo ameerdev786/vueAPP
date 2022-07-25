@@ -4,17 +4,14 @@
 
   <div class="container">
     <div class="left">
-      <Header :isFormShow="showAddForm" @showAddForm="toggleForm" name="Task Tracer" />
+      <Header :isFormShow="showAddForm" @showAddForm="toggleForm" name="Daily Task Manger " />
       <div v-if="showAddForm">
         <AddTask @add-task="AddTask" />
       </div>
     </div>
     <div class="right">
       <Tasks class="tasks" @delete-task="deleteTask" @toggle="ToggleTask" :tasks="tasks" />
-
     </div>
-
-
   </div>
 </template>
 <script>
